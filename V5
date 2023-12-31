@@ -116,6 +116,7 @@ OPENGUI.Visible = true
 end)
 OPENGUI.Parent = ScreenGui
 OPENGUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OPENGUI.Visible = false
 OPENGUI.BorderColor3 = Color3.fromRGB(255, 255, 0)
 OPENGUI.BorderSizePixel = 3
 OPENGUI.Position = UDim2.new(1,-150,1,-90)
