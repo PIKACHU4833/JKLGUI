@@ -10,7 +10,6 @@ local ScrollingFrame = Instance.new("ScrollingFrame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local CLOSE = Instance.new("TextButton")
-local OPENGUI = Instance.new("TextButton")
 local RESETAVATAR = Instance.new("TextButton")
 local K00PGUI = Instance.new("TextButton")
 local AVATAR = Instance.new("TextButton")
@@ -112,23 +111,6 @@ CLOSE.TextSize = 14.000
 CLOSE.TextWrapped = true
 CLOSE.MouseButton1Down:connect(function()
 Frame.Visible = false
-OPENGUI.Visible = true
-end)
-OPENGUI.Parent = ScreenGui
-OPENGUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-OPENGUI.BorderColor3 = Color3.fromRGB(255, 255, 0)
-OPENGUI.BorderSizePixel = 3
-OPENGUI.Position = UDim2.new(1,-150,1,-90)
-OPENGUI.Size = UDim2.new(0,150,0,45)
-OPENGUI.Font = Enum.Font.SourceSans
-OPENGUI.Text = "OPEN JKLGUI"
-OPENGUI.TextColor3 = Color3.fromRGB(242, 243, 243)
-OPENGUI.TextScaled = true
-OPENGUI.TextSize = 14.000
-OPENGUI.TextWrapped = true
-OPENGUI.MouseButton1Down:connect(function()
-Frame.Visible = true
-OPENGUI.Visible = false
 end)
 RESETAVATAR.Parent = Frame
 RESETAVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
