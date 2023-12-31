@@ -9,7 +9,7 @@ local IMAGE = Instance.new("ImageLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
-local R6AVATAR = Instance.new("TextButton")
+local CLOSE = Instance.new("TextButton")
 local RESETAVATAR = Instance.new("TextButton")
 local K00PGUI = Instance.new("TextButton")
 local AVATAR = Instance.new("TextButton")
@@ -97,20 +97,20 @@ TextLabel2.TextWrapped = true
 
 -- BUTTON UP :
 
-R6AVATAR.Parent = Frame
-R6AVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-R6AVATAR.BorderColor3 = Color3.fromRGB(255, 255, 0)
-R6AVATAR.BorderSizePixel = 3
-R6AVATAR.Position = UDim2.new(0.82, 0, 0, 0)
-R6AVATAR.Size = UDim2.new(0, 64, 0, 35)
-R6AVATAR.Font = Enum.Font.SourceSans
-R6AVATAR.Text = "R6"
-R6AVATAR.TextColor3 = Color3.fromRGB(242, 243, 243)
-R6AVATAR.TextScaled = true
-R6AVATAR.TextSize = 14.000
-R6AVATAR.TextWrapped = true
-R6AVATAR.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua'),true))()
+CLOSE.Parent = Frame
+CLOSE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CLOSE.BorderColor3 = Color3.fromRGB(255, 255, 0)
+CLOSE.BorderSizePixel = 3
+CLOSE.Position = UDim2.new(0.82, 0, 0, 0)
+CLOSE.Size = UDim2.new(0, 64, 0, 35)
+CLOSE.Font = Enum.Font.SourceSans
+CLOSE.Text = "X"
+CLOSE.TextColor3 = Color3.fromRGB(242, 243, 243)
+CLOSE.TextScaled = true
+CLOSE.TextSize = 14.000
+CLOSE.TextWrapped = true
+CLOSE.MouseButton1Down:connect(function()
+Frame.Visible = false
 end)
 RESETAVATAR.Parent = Frame
 RESETAVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
