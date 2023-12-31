@@ -631,11 +631,11 @@ for i,v in pairs(game.Players:GetPlayers()) do
 				newgui.Name = "k00p's Jumpscare"
 				local newimage = Instance.new("ImageLabel",newgui)
 				newimage.Image = "rbxassetid://15767625666"
-				newimage.Size = UDim2.new(0,900,0,345)
-                               
+				newimage.Size = UDim2.new(0,900,0,400)
+                                newimage.Position = UDim2.new(0, 0, -0.1, 0)
+                                
                                 newimage.BackgroundTransparency = 1
-                                local m = Instance.new("Hint", game.workspace)
-		                m.Text = " TEAM JKLO JOINED TO DESTROY HAHA!11!2!"
+                                
        s = Instance.new("Sound",newgui)
 				s.SoundId = "rbxassetid://8683380188"
 				s.Volume = 9e9
