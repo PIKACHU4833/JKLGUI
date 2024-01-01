@@ -43,6 +43,7 @@ local MESSAGESPAM = Instance.new("TextButton")
 local KAAXPARTICLES = Instance.new("TextButton")
 local DECALSPAM2 = Instance.new("TextButton")
 local B0SSJKIDDCK = Instance.new("TextButton")
+local MESHDISCO = Instance.new("TextButton")
 
 --Properties :
 
@@ -1064,6 +1065,43 @@ B0SSJKIDDCK.TextSize = 14.000
 B0SSJKIDDCK.TextWrapped = true
 B0SSJKIDDCK.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PIKACHU4833/B0SSJKIDD-CK/main/BOSSJKIDD%20CK"))()
+end)
+MESHDISCO.Parent = TextLabel_3
+MESHDISCO.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MESHDISCO.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MESHDISCO.BorderSizePixel = 3
+MESHDISCO.Position = UDim2.new(0.68, 0, 0.85, 0)
+MESHDISCO.Size = UDim2.new(0, 92, 0, 30)
+MESHDISCO.Font = Enum.Font.SourceSans
+MESHDISCO.Text = "MESH DISCO"
+MESHDISCO.TextColor3 = Color3.fromRGB(242, 243, 243)
+MESHDISCO.TextScaled = true
+MESHDISCO.TextSize = 14.000
+MESHDISCO.TextWrapped = true
+MESHDISCO.MouseButton1Down:connect(function()
+plr = game.Players.LocalPlayer.Name
+meshes = {"Brick","Cylinder","Head","Sphere","Torso","Wedge"}
+h = game.Workspace[plr].Head.Mesh
+t = Instance.new("SpecialMesh",game.Workspace[plr].Torso)
+la = Instance.new("SpecialMesh",game.Workspace[plr]["Left Arm"])
+ra = Instance.new("SpecialMesh",game.Workspace[plr]["Right Arm"])
+ll = Instance.new("SpecialMesh",game.Workspace[plr]["Left Leg"])
+rl = Instance.new("SpecialMesh",game.Workspace[plr]["Right Leg"])
+while true do
+wait(0.1)
+h.MeshType = meshes[math.random(1,#meshes)]
+h.Parent.BrickColor = BrickColor.Random()
+t.MeshType = meshes[math.random(1,#meshes)]
+t.Parent.BrickColor = BrickColor.Random()
+la.MeshType = meshes[math.random(1,#meshes)]
+la.Parent.BrickColor = BrickColor.Random()
+ra.MeshType = meshes[math.random(1,#meshes)]
+ra.Parent.BrickColor = BrickColor.Random()
+ll.MeshType = meshes[math.random(1,#meshes)]
+ll.Parent.BrickColor = BrickColor.Random()
+rl.MeshType = meshes[math.random(1,#meshes)]
+rl.Parent.BrickColor = BrickColor.Random()
+end
 end)
 
 -- Scripts :
