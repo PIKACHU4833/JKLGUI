@@ -42,6 +42,7 @@ local FASTHINT = Instance.new("TextButton")
 local MESSAGESPAM = Instance.new("TextButton")
 local KAAXPARTICLES = Instance.new("TextButton")
 local DECALSPAM2 = Instance.new("TextButton")
+local B0SSJKIDDCK = Instance.new("TextButton")
 
 --Properties :
 
@@ -1048,6 +1049,21 @@ s.SkyboxUp = "http://www.roblox.com/asset/?id=15790326222"
 			end
 		end	
 decalspam(ID)
+end)
+B0SSJKIDDCK.Parent = TextLabel_3
+B0SSJKIDDCK.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+B0SSJKIDDCK.BorderColor3 = Color3.fromRGB(0, 0, 0)
+B0SSJKIDDCK.BorderSizePixel = 3
+B0SSJKIDDCK.Position = UDim2.new(0.38, 0, 0.85, 0)
+B0SSJKIDDCK.Size = UDim2.new(0, 92, 0, 30)
+B0SSJKIDDCK.Font = Enum.Font.SourceSans
+B0SSJKIDDCK.Text = "B0SSJKIDD CK GUI"
+B0SSJKIDDCK.TextColor3 = Color3.fromRGB(242, 243, 243)
+B0SSJKIDDCK.TextScaled = true
+B0SSJKIDDCK.TextSize = 14.000
+B0SSJKIDDCK.TextWrapped = true
+B0SSJKIDDCK.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PIKACHU4833/B0SSJKIDD-CK/main/BOSSJKIDD%20CK"))()
 end)
 
 -- Scripts :
