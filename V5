@@ -665,7 +665,7 @@ C00ZBDDKIDDGUI.TextScaled = true
 C00ZBDDKIDDGUI.TextSize = 14.000
 C00ZBDDKIDDGUI.TextWrapped = true
 C00ZBDDKIDDGUI.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/WXDxQ2Ld"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/tZDLSLra"))()
 wait()
 setclipboard("KEY IS C00ZBDDKIDDISBETTER")
 end)
