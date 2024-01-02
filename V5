@@ -44,6 +44,7 @@ local KAAXPARTICLES = Instance.new("TextButton")
 local DECALSPAM2 = Instance.new("TextButton")
 local B0SSJKIDDCK = Instance.new("TextButton")
 local MESHDISCO = Instance.new("TextButton")
+local CHICKENARMS = Instance.new("TextButton")
 
 --Properties :
 
@@ -1102,6 +1103,25 @@ ll.Parent.BrickColor = BrickColor.Random()
 rl.MeshType = meshes[math.random(1,#meshes)]
 rl.Parent.BrickColor = BrickColor.Random()
 end
+end)
+CHICKENARMS.Parent = TextLabel_3
+CHICKENARMS.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHICKENARMS.BorderColor3 = Color3.fromRGB(242, 243, 243)
+CHICKENARMS.BorderSizePixel = 3
+CHICKENARMS.Position = UDim2.new(0.08, 0, 0.95, 0)
+CHICKENARMS.Size = UDim2.new(0, 92, 0, 30)
+CHICKENARMS.Font = Enum.Font.SourceSans
+CHICKENARMS.Text = "CHICKEN ARMS"
+CHICKENARMS.TextColor3 = Color3.fromRGB(242, 243, 243)
+CHICKENARMS.TextScaled = true
+CHICKENARMS.TextSize = 14.000
+CHICKENARMS.TextWrapped = true
+CHICKENARMS.MouseButton1Down:connect(function()
+CHICKEN = game.Players.LocalPlayer.Name
+game.Workspace[CHICKEN].Torso["Left Shoulder"].C0 = CFrame.new(-1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0,math.pi/2,0) * CFrame.fromEulerAnglesXYZ(math.pi/2, 0, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0)
+game.Workspace[CHICKEN].Torso["Left Shoulder"].C1 = CFrame.new(0, 0.5, 0)
+game.Workspace[CHICKEN].Torso["Right Shoulder"].C0 = CFrame.new(1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0) * CFrame.fromEulerAnglesXYZ(math.pi/2, 0, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0)
+game.Workspace[CHICKEN].Torso["Right Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 end)
 
 -- Scripts :
