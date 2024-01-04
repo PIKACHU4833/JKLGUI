@@ -1,4 +1,4 @@
-IMAGE = 15866619293
+IMAGE = rbxassetid://15866619293
 
 -- Gui to Lua
 -- Version: 3.2
@@ -67,7 +67,7 @@ IMAGE.BackgroundTransparency = 1
 IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE.BorderSizePixel = 3
 IMAGE.Size = UDim2.new(0, 356, 0, 356)
-IMAGE.Image = "rbxassetid://" ..IMAGE
+IMAGE.Image = IMAGE
 
 ScrollingFrame.Parent = Frame
 ScrollingFrame.Active = true
