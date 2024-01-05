@@ -46,6 +46,7 @@ local B0SSJKIDDCK = Instance.new("TextButton")
 local MESHDISCO = Instance.new("TextButton")
 local CHICKENARMS = Instance.new("TextButton")
 local DECALSPAM3 = Instance.new("TextButton")
+local NEWFACE = Instance.new("TextButton")
 
 --Properties :
 
@@ -1185,6 +1186,31 @@ s.SkyboxUp = "http://www.roblox.com/asset/?id=15866619293"
 			end
 		end	
 decalspam(ID)
+end)
+NEWFACE.Parent = TextLabel_3
+NEWFACE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NEWFACE.BorderColor3 = Color3.fromRGB(242, 243, 243)
+NEWFACE.BorderSizePixel = 3
+NEWFACE.Position = UDim2.new(0.68, 0, 0.95, 0)
+NEWFACE.Size = UDim2.new(0, 92, 0, 30)
+NEWFACE.Font = Enum.Font.SourceSans
+NEWFACE.Text = "NEW FACE"
+NEWFACE.TextColor3 = Color3.fromRGB(242, 243, 243)
+NEWFACE.TextScaled = true
+NEWFACE.TextSize = 14.000
+NEWFACE.TextWrapped = true
+NEWFACE.MouseButton1Down:connect(function()
+local player = game:GetService("Players").LocalPlayer
+gui1 = Instance.new("BillboardGui", player.Character.Head)
+gui1.Size=UDim2.new(2.5,0,2.5,0)
+gui1.StudsOffset=Vector3.new(0,0,0)
+gui1.AlwaysOnTop = true
+text1=Instance.new("ImageLabel")
+text1.Image = "http://www.roblox.com/asset/?id=15877893828"
+text1.Size=UDim2.new(1,0,1,0)
+text1.Position=UDim2.new(0,0,0,0)
+text1.BackgroundTransparency = 1
+text1.Parent=gui1
 end)
 
 -- Scripts :
