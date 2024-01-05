@@ -45,7 +45,7 @@ local DECALSPAM2 = Instance.new("TextButton")
 local B0SSJKIDDCK = Instance.new("TextButton")
 local MESHDISCO = Instance.new("TextButton")
 local CHICKENARMS = Instance.new("TextButton")
-local CHICKENARMS = Instance.new("TextButton")
+local DECALSPAM3 = Instance.new("TextButton")
 
 --Properties :
 
@@ -1123,6 +1123,68 @@ game.Workspace[CHICKEN].Torso["Left Shoulder"].C0 = CFrame.new(-1.5, 0.5, 0) * C
 game.Workspace[CHICKEN].Torso["Left Shoulder"].C1 = CFrame.new(0, 0.5, 0)
 game.Workspace[CHICKEN].Torso["Right Shoulder"].C0 = CFrame.new(1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0) * CFrame.fromEulerAnglesXYZ(math.pi/2, 0, 0) * CFrame.fromEulerAnglesXYZ(0,-math.pi/2,0)
 game.Workspace[CHICKEN].Torso["Right Shoulder"].C1 = CFrame.new(0, 0.5, 0)
+end)
+DECALSPAM3.Parent = TextLabel_3
+DECALSPAM3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DECALSPAM3.BorderColor3 = Color3.fromRGB(242, 243, 243)
+DECALSPAM3.BorderSizePixel = 3
+DECALSPAM3.Position = UDim2.new(0.38, 0, 0.95, 0)
+DECALSPAM3.Size = UDim2.new(0, 92, 0, 30)
+DECALSPAM3.Font = Enum.Font.SourceSans
+DECALSPAM3.Text = "DECAL 3"
+DECALSPAM3.TextColor3 = Color3.fromRGB(242, 243, 243)
+DECALSPAM3.TextScaled = true
+DECALSPAM3.TextSize = 14.000
+DECALSPAM3.TextWrapped = true
+DECALSPAM3.MouseButton1Down:connect(function()
+s = Instance.new("Sky")
+s.Name = "Skybox"
+s.SkyboxBk = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxDn = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxFt = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxLf = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxRt = "http://www.roblox.com/asset/?id=15866619293"
+s.SkyboxUp = "http://www.roblox.com/asset/?id=15866619293"
+        s.Parent = game.Lighting
+		local ID = 15866619293
+		function spamDecal(v)
+			if v:IsA("Part") then
+				for i = 0, 5 do
+					D = Instance.new("Decal")
+					D.Name = "k00pz"
+					D.Face = i
+					D.Parent = v
+					D.Texture = ("http://www.roblox.com/asset/?id="..Id)
+				end
+			else
+				if v:IsA("Model") then
+					for a,b in pairs(v:GetChildren()) do
+						spamDecal(b)
+					end
+				end
+			end
+		end
+		function decalspam(id)
+			Id = id
+			for i,v in pairs(game.Workspace:GetChildren()) do
+				if v:IsA("Part") then
+					for i = 0, 5 do
+						D = Instance.new("Decal")
+						D.Name = "k00pz"
+						D.Face = i
+						D.Parent = v
+						D.Texture = ("http://www.roblox.com/asset/?id="..id)
+					end
+				else
+					if v:IsA("Model") then
+						for a,b in pairs(v:GetChildren()) do
+							spamDecal(b)
+						end
+					end
+				end
+			end
+		end	
+decalspam(ID)
 end)
 
 -- Scripts :
